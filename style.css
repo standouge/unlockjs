@@ -1,9 +1,27 @@
-.buttonWrapper {
-    margin: 20%;
-}
-
-
-.inputError {
+#fnInputError {
     color: red;
-
-}
+  }
+  
+  #lnInputError {
+    color: red;
+  }
+  
+  #add1InputError {
+    color: red;
+  }
+  
+  #cityInputError {
+    color: red;
+  }
+  
+  #stateInputError {
+    color: red;
+  }
+  
+  #zipInputError {
+    color: red;
+  }
+  
+  #ageInputError {
+    color: red;
+  }
