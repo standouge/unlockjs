@@ -10,7 +10,7 @@ function verifyInput() {
 
 if (fname.length < 5) {
   alert("First name requests at least 5 characters");
-  document.getElementById("fnInputError").scrollIntoView(true);
+  document.getElementById("fnameInput").scrollIntoView(true);
   document.getElementById("fnInputError").innerHTML ="Please enter 5 characters.";
   return;
 } else {
@@ -19,7 +19,7 @@ if (fname.length < 5) {
 
 if (lname.length < 5) {
   alert("Last name requests at least 5 characters");
-  document.getElementById("lnInputError").scrollIntoView(true);
+  document.getElementById("lnameInput").scrollIntoView(true);
   document.getElementById("lnInputError").innerHTML = "Please enter 5 characters.";
   return;
 } else {
@@ -28,7 +28,7 @@ if (lname.length < 5) {
 
 if (add1.length < 10) {
   alert("Address requests at least 10 characters");
-  document.getElementById("add1InputError").scrollIntoView(true);
+  document.getElementById("add1Input").scrollIntoView(true);
   document.getElementById("add1InputError").innerHTML = "Please enter 10 characters";
   return;
 } else {
@@ -37,7 +37,7 @@ if (add1.length < 10) {
 
 if (city.length < 5) {
   alert("City requests at least 5 characters");
-  document.getElementById("cityInputErrort").scrollIntoView(true);
+  document.getElementById("cityInput").scrollIntoView(true);
   document.getElementById("cityInputError").innerHTML = "Please input 5 characters.";
   return;
 } else {
@@ -46,7 +46,7 @@ if (city.length < 5) {
 
 if (state.length < 2) {
   alert("State requests at least 2 characters");
-  document.getElementById("stateInputError").scrollIntoView(true);
+  document.getElementById("stateInput").scrollIntoView(true);
   document.getElementById("stateInputError").innerHTML = "Please input 2 characters.";
   return;
 } else {
@@ -54,7 +54,7 @@ if (state.length < 2) {
 }
 if (zip.length <5) {
   alert("Zip requests at least 5 digits");
-  document.getElementById("zipInputError").scrollIntoView(true);
+  document.getElementById("zipInput").scrollIntoView(true);
   document.getElementById("zipInputError").innerHTML =  "Please input 5 numbers.";
   return;
 } else {
@@ -62,7 +62,7 @@ if (zip.length <5) {
 }
 if (age.length !=2) {
   alert("Age requires 2 digits");
-  document.getElementById("ageInputError").scrollIntoView(true);
+  document.getElementById("ageInput").scrollIntoView(true);
   document.getElementById("ageInputError").innerHTML = "Please input 2 digits.";
   return;
 } else {
