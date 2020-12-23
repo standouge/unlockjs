@@ -46,14 +46,14 @@
             <button id="dayButton" onclick="showDay()">Show Day</button>
         </div>
 
-        <!-- <div id="monthColumn">
+        <div id="monthColumn">
             <h1>Current Month</h1>
             <p id="currentMonth"></p>
             <button id="monthButton" onclick="showMonth()">Show Month</button>
 
         </div>
 
-        <div id="seasonColumn">
+        <!-- <div id="seasonColumn">
             <h1>Current Season</h1>
             <p id="currentSeason"></p>
             <button id="seasonButton" onclick="showSeason()">Show Season</button>
@@ -62,6 +62,7 @@
     </div>
 
 <script>
+    
     function showDay() {
         var currentDate = new Date();
         var currentDay = currentDate.getDay(); 
@@ -76,31 +77,28 @@
             return "Monday";
         }else if(currentDay == 2){
             return "Tuesday";
-        // }else if(currentDay == 3){
-        //     return "Wednesday";
-        // }else if(currentDay == 4){
-        //     return "Thursday";
-        // }else if(currentDay == 5){
-        //     return "Friday";
-        // }else if(currentDay == 6){
-        //     return "Saturday";
+        }else if(currentDay == 3){
+            return "Wednesday";
+        }else if(currentDay == 4){
+            return "Thursday";
+        }else if(currentDay == 5){
+            return "Friday";
+        }else if(currentDay == 6){
+            return "Saturday";
         }else{
             return "Invalid Day"
         }
     }
 
+    function showMonth() {
+        var currentDate = new;
+        var currentMonth = currentDate.getMonth();   
+        document.getElementById('currentDay').innerHTML = SVGPathSegCurvetoQuadraticAbs;
+    }
 
-
-
-    // function showMonth() {
-    //     var currentMonth = new;
-    //     var currentDay = currentDate.getDay();   
-    //     document.getElementById('currentDay').innerHTML = currentDay;
-    // }
-
-    // function showSeason() {
+    function showSeason() {
                
-    // }         
+    }         
 
 
 </script>
