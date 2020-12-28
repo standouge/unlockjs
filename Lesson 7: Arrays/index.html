@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+        <title>Unlock: Javascript Homework 7</title>
+       
+        <style>
+            #carSeleciton0{
+                float: left;
+                width: 33%;
+            }
+            #carSeleciton1{
+                float: left;
+                width: 33%;
+            }
+            #carSeleciton2{
+                float: right;
+                width: 33%;
+            }
+
+            .carImages{
+                width: 50%;
+            }
+       
+        </style>
+
+
+    </head>
+
+    <body>
+        <p id="demo"></p>
+
+        <h1 id="item1"></h1>
+        <h1 id="item2"></h1>
+        <h1 id="item3"></h1>
+
+        <script>
+            var cars = [
+                "Tesla",
+                "Ford",
+                "BMW"
+            ];
+            
+            var carImages = [
+                "cars/models.jpg", 
+                "https://c.files.bbci.co.uk/F387/production/_109734326_bf719441-85d2-4e17-89d1-90f62e4028aa.jpg",
+                "https://cdn.carbuzz.com/gallery-images/840x560/438000/600/438682.jpg"
+            
+            ]
+
+            var carCounter = 0;
+            while(carCounter <3){
+                document.write("<div id='carSection" +carCounter+ "'>");
+                document.write("<h1>" + cars[carCounter] + "</h1>");
+                document.write("<img src=' " + carImages[carCounter] + "'class='carImages'/>");
+                document.write("<div/>");  
+
+                carCounter++;
+            }
+        </script>
+
+    </body>
+
+</html>
