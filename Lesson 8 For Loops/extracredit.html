@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+        
+        <title>JavaScript Extra Credit</title>
+
+        <style>
+            #divWrapper {
+            	text-align: center
+                
+                }
+                
+            .innerWrapper {
+                float: left;
+                width: 33%;
+            }
+
+            
+        </style>
+
+ </head>
+
+<body>
+
+        <div id= divWrapper> 
+            
+            <h1 style="text-align:center" >Lesson 8 Homework</h1>
+
+            <div class="innerWrapper">
+                <h3 style="text-align:center" >Extra Credit</h3>
+                <p style=text-align:center id="demo1"></p>
+            </div>
+            
+            <div class="innerWrapper">
+            	<h3 style="text-align:center" >HW 8.1</h3>
+                <p id="demo"></p>
+            </div>    
+        
+        </div>
+
+        <script>
+            
+            var cars = ["*", "* *","* * *", "* * * *"];
+                var text1 = "";
+                var i;
+                
+                for (i = 0; i < cars.length; i++) {
+                text1 += cars[i] + "<br>";
+                }
+                
+            document.getElementById("demo1").innerHTML = text1;
+            
+            var numbers = ["1","2","3","4","5","6","7","8","9","10"];
+            var text = "";
+            var a;
+
+            for (a = 0; a < numbers.length; a++) {
+                text += numbers[a] + "<br>";
+            }
+
+            document.getElementById("demo").innerHTML = text;
+
+        </script>
+</body>
+
+</html>
