@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Unlock Academy Lesson 8</title>
+
+        <style>
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <h1>JavaScript For Loop</h1>
+        
+        <p id="demo"></p>
+
+        
+        
+        <script>
+
+            var imagesSection = [
+                "https://media.istockphoto.com/photos/multi-sports-collage-about-basketball-american-football-players-and-picture-id919764406",
+                "https://media.istockphoto.com/photos/goaaaaaaal-picture-id948418132",
+                "https://media.istockphoto.com/photos/three-men-watching-football-on-tv-in-bar-picture-id1135937542",
+                "https://media.istockphoto.com/photos/crowd-cheering-for-their-team-with-arms-raised-picture-id1130790219",
+                "https://media.istockphoto.com/photos/athlete-running-picture-id636887598"
+            ];
+
+            var text = "";
+            for (var myNum = 0; myNum < imagesSection.length; myNum++) {
+                
+                text += "<img width='30%' src= '"+imagesSection[myNum]+"'/> <br>";
+                
+            }
+            
+            document.getElementById("demo").innerHTML = text;
+
+        </script>
+
+    </body>
+
+</html>
