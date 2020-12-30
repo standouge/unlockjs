@@ -9,11 +9,70 @@
     </style>
 </head>
 <body>
+    <!-- Create a simple website that has an input box and a button.
 
+    The goal is when a user enters a color into the input box (yellow, blue, black or green) and then click the button, the background color of the ENTIRE page will change to that color.
+    
+    If the user does not enter in one of those colors, make the background color of the page red.
+    
+    Use the Switch statement to check the user's input.
+    The Switch statement should be inside of a function. -->
+
+    <h1>JavaScript Lesson 9</h1>
+
+    <p>Type one color into the field below: Yellow, Blue, Black, or Green.</p>
+
+    <input type="text" id="colorInput" placeholder="Enter Color"><br><br>
+    <button id="submit" onclick="myFunction()">Click me</button>
 
     <script>
+        function myFunction() {
+            var text;
+            for(i=0; i<document.f1.colour.length; i++){
+                if (document.f1.colour[i].checked==true){
+                    x=i+1;
+                }   
+            }
+            switch(x){
+                case 1:
+                document.body.style.backgroundColor="#yellow";
+                    //keeping the foreground set to black
+                break;
+            case 2:
+                document.body.style.backgroundColor="#blue";
+                break;
+            case 2:
+                document.body.style.backgroundColor="#black";
+                break;
+                case 2:
+                document.body.style.backgroundColor="#green";
+                break;
+
+            default:
+                alert("Please choose a colour");
+	            break;	
+            
+            } 
+        }  
+
+        
+        
+
+
 
     </script>
 </body>
 
 </html>
+
+
+ <!-- //     var color = document.getElementById("colorInput").value;
+        //     switch (color) {
+        //         case "yellow":
+        //         text = "I love cakes!";
+        //         break;
+        //     default:
+        //     text = "I do not like deserts";
+        //     }
+        // document.getElementById("test").innerHTML = text;
+        // } -->
