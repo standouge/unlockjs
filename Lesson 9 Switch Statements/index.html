@@ -22,43 +22,41 @@
 
     <p>Type one color into the field below: Yellow, Blue, Black, or Green.</p>
 
-    <input type="text" id="colorInput" placeholder="Enter Color"><br><br>
-    <button id="submit" onclick="myFunction()">Click me</button>
+    <input type="text" id="colorInputText"><br><br>
+    <button id="colorButton" onclick="colorChange()">Click me</button>
 
     <script>
-        function myFunction() {
-            var text;
-            for(i=0; i<document.f1.colour.length; i++){
-                if (document.f1.colour[i].checked==true){
-                    x=i+1;
-                }   
-            }
+        // function changeColor() {
+        //     let color = document.getElementByID('colorInputText').value;
+        //     document.body.style.backgroundColor = color;
+        // }
+            
+        function colorChange() {
+            var color = document.getElementById("colorInputText").value;
+            document.body.style.backgroundColor = color;
+            
             switch(x){
-                case 1:
-                document.body.style.backgroundColor="#yellow";
-                    //keeping the foreground set to black
+               case 1:
+               document.body.style.backgroundColor="yellow";
+            //         //keeping the foreground set to black
                 break;
             case 2:
-                document.body.style.backgroundColor="#blue";
+                document.body.style.backgroundColor="blue";
                 break;
-            case 2:
-                document.body.style.backgroundColor="#black";
+            case 3:
+                document.body.style.backgroundColor="black";
                 break;
-                case 2:
+            case 4:
                 document.body.style.backgroundColor="#green";
                 break;
 
             default:
-                alert("Please choose a colour");
+                alert("Please choose a color");
 	            break;	
             
             } 
-        }  
-
-        
-        
-
-
+        }
+ 
 
     </script>
 </body>
@@ -76,3 +74,4 @@
         //     }
         // document.getElementById("test").innerHTML = text;
         // } -->
+
