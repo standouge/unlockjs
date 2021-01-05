@@ -39,21 +39,22 @@
           <!-- <p>Enter Height</p>
           <input type="text" id="heightInput"/><br> -->
 
-          <input type="button" id="clickBttn" style="padding: 5%; margin-top: 5%;" value="Submit" onclick="changeSize"/>
+          <input type="button" id="clickBttn" style="padding: 5%; margin-top: 5%;" value="Submit" onclick="changeSize()"/>
           
         </div>
       </div>
 
     <script>
       function changeSize() {
-        var newImage = getElementById('myImg');
-        var newWidth = getElementById('widthInput').value;
-        var newHeight = getElementById('heightInput').value;
-          document.getElementById('myImg').value;
-          newImage.style.height = newHeight.value;
+        var newImage = document.getElementById('myImg');
+        var newWidth = document.getElementById('widthInput').value;
+        // var newHeight = document.getElementById('heightInput').value;
+        // newImage.style.width = newWidth;
+        console.log(changeSize);
+          // document.getElementById('myImg').value;
+          // newImage.style.height = newHeight.value;
       }
 
-      
 
     </script>
   </body>
