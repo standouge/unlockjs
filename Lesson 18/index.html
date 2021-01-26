@@ -25,9 +25,10 @@
           </h4>
           <!-- Selection buttons for color -->
           <div class="btn-group" role="group" aria-label="Basic example">
-            <button type="button" class="blackColor btn btn-primary active">Black</button>
-            <button type="button" class="btn btn-primary">Yellow</button>
-            <button type="button" class="btn btn-primary">Red</button>
+            <button type="button" class="btn btn-primary active" data-filter="blackColor">Black</button>
+            <button type="button" class="btn btn-primary" data-filter="yellowColor">Yellow</button>
+            <button type="button" class="btn btn-primary" data-filter="redColor">Red</button>
+            <button type="button" class="btn btn-primary" data-filter="greyColor">Grey</button>
           </div>
         </div>
 
@@ -57,56 +58,56 @@
     
     <div class="container" style="text-align: center">
         <!--Row 1  -->
-      <div class="row target" style="margin-top: 5%">
-        <div id="div1" class="col-lg redColor">
+      <div class="row all" style="margin-top: 5%">
+        <div class="col-lg" data-color="redColor">
           <img src="https://robbreport.com/wp-content/uploads/2019/11/audi-r8-g.jpg?w=1000" style="width: 100%"/>
         </div>
-        <div id="div2" class="col-lg blackColor">
+        <div class="col-lg all" data-color="blackColor" data-type="sportscar" data-transmission="manual">
           <img src="https://robbreport.com/wp-content/uploads/2020/10/kithm402.jpg?w=1000" style="width: 100%"/>
         </div>
-        <div id="div3" class="col-lg greyColor">
+        <div class="col-lg all" data-color="greyColor" data-type="sportscar" data-transmission="manual">
           <img src="https://car-images.bauersecure.com/pagefiles/86641/1056x594/052_e-tron-gt.jpg" style="width: 100%"/>
         </div>
-        <div id="div4" class="col-lg yellowColor">
+        <div class="col-lg all" data-color="yellowColor">
           <img src="https://pbs.twimg.com/media/EoesPC4WEAAbD7w?format=jpg&name=large" style="width: 100%"/>
         </div>
       </div>
       
       <!-- Row 2 -->
-      <!-- <div class="row" style="margin-top:3%">
-        <div class="col-lg all">
+      <div class="row" style="margin-top:3%">
+        <div class="col-lg all" data-color="greyColor" data-type="sportscar" data-transmission="manual">
             <img src="https://www.mercedes-benz.com/en/vehicles/passenger-cars/amg-gt/mercedes-amg-gt-black-series/_jcr_content/image/MQ6-12-image-20200714232554/00-mercedes-amg-gt-black-series-br190-2021-2560x1440.jpeg" style="width: 100%"/>
         </div>
         
-        <div class="col-lg blackColor all">
+        <div class="col-lg all" data-color="blackColor" data-type="sportscar" data-transmission="manual">
             <img src="https://www.carscoops.com/wp-content/uploads/webp/2019/05/5350cb50-toyota-supra-dyno-.webp" style="width: 100%"/>
           </div>
-          <div class="col-lg">
+          <div class="col-lg all" data-color="yellowColor">
             <img src="https://i.pinimg.com/originals/6e/7e/20/6e7e20677aaad40bd7c773ad88ed7d71.jpg" style="width: 100%"/>
           </div>
-          <div class="col-lg">
+          <div class="col-lg all" data-color="redColor">
             <img src="https://www.motorbiscuit.com/wp-content/uploads/2020/04/Maserati-GranTurismo-CF.jpg" style="width: 100%"/>
           </div>
-        </div> -->
+        </div>
         
         <!-- Row 3 -->
-        <!-- <div class="row" style="margin-top: 3%">
-          <div class="col-lg">
+        <div class="row" style="margin-top: 3%">
+          <div class="col-lg all" data-color="greyColor" data-type="truck" data-transmission="Automatic">
             <img src="https://www.motortrend.com/uploads/sites/5/2020/06/2021-Ford-Mustang-Mach-E-01.jpg?fit=around%7C875:492" style="width: 100%"/>
           </div>
-          <div class="col-lg">
+          <div class="col-lg all">
             <img src="https://cdn.motor1.com/images/mgl/nRrWG/s1/novitec-maserati-levante-esteso.jpg" style="width: 100%"/>
           </div>
-          <div class="col-lg">
+          <div class="col-lg all">
             <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/2020-toyota-sequoia-trd-pro-203-1586356759.jpg?crop=0.830xw:0.623xh;0.154xw,0.195xh&resize=1200:*" style="width: 100%"/>
           </div>
-          <div class="col-lg">
+          <div class="col-lg all">
             <img src="https://www.motorbiscuit.com/wp-content/uploads/2020/08/toyota-sequoia_100751179_h-1024x683.jpg" style="width: 100%"/>
           </div>
-        </div> -->
+        </div>
         
         <!-- Row 4 -->
-        <!-- <div class="row" style="margin-top: 3%">
+        <div class="row" style="margin-top: 3%">
           <div class="col-lg blackColor">
             <img src="https://cdn.shopify.com/s/files/1/0043/8471/8938/products/160980393133012118_ae5a3735-c0e0-455b-ba8c-5090c91f9d92_812x.jpg?v=1609814996" style="width: 100%"/>
           </div>
@@ -119,10 +120,10 @@
           <div class="col-lg">
             <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/a-rivian-r1s-front-154334sized99-1598912228.jpg?crop=1xw:1xh;center,top&resize=980:*" style="width: 100%"/>
           </div>
-        </div> -->
+        </div>
       
         <!-- Row 5 -->
-        <!-- <div class="row" style="margin-top: 3%">
+        <div class="row" style="margin-top: 3%">
           <div class="col-lg blackColor">
             <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/2020-chevrolet-silverado-midnight-edition-111-1598914555.jpg?crop=1xw:1xh;center,top&resize=980:*" style="width: 100%"/>
           </div>
@@ -136,9 +137,9 @@
             <img src="https://cdn.motor1.com/images/mgl/3MMjj/s3/future-trucks-lead.webp" style="width: 100%"/>
           </div>
         </div>
-         -->
+        
         <!-- Row 6 -->
-        <!-- <div class="row" style="margin-top: 3%; margin-bottom:5%">
+        <div class="row" style="margin-top: 3%; margin-bottom:5%">
           <div class="col-lg">
             <img src="https://s3.amazonaws.com/images.gearjunkie.com/uploads/2019/04/Scrambler.jpg" style="width: 100%"/>
           </div>
@@ -151,7 +152,7 @@
           <div class="col-lg blackColor">
             <img src="https://www.automobilemag.com/uploads/sites/5/2019/09/2020-Bollinger-B2-7_8-Front.jpg?fit=around%7C875:492" style="width: 100%"/>
           </div>
-        </div> -->
+        </div>
 
     </div>
     
@@ -159,11 +160,23 @@
     <script>
       $(document).ready(function(){
         $(".btn").click(function(){
+          var filter = $(this).data('filter');
+          var dataFilter = '[data-color="' + filter + '"]';
+          // console.log($(dataFilter));
+
+          // Hide all cars
+          // $('div.row > div').hide();
           $(".all").hide();
+
+          // Show the filtered cars.
+          $(dataFilter).show();
+
+          // $(".all").hide();
+
         });
-        $(".btn").click(function(){
-          $(".blackColor").show();
-        });
+        // $(".btn").click(function(){
+        //   $(".blackColor").show();
+        // });
       });
     </script>
     
