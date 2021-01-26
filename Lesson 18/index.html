@@ -10,6 +10,24 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <style>
+      div[data-color="blackColor"] {
+        border: 2px solid black;
+      }
+
+      div[data-color="redColor"] {
+        border: 2px solid red;
+      }
+
+      div[data-color="yellowColor"] {
+        border: 2px solid yellow;
+      }
+
+      div[data-coloother"] {
+        border: 2px solid grey;
+      }
+    </style>
   </head>
   
   <body>
@@ -28,7 +46,7 @@
             <button type="button" class="btn btn-primary active" data-filter="blackColor">Black</button>
             <button type="button" class="btn btn-primary" data-filter="yellowColor">Yellow</button>
             <button type="button" class="btn btn-primary" data-filter="redColor">Red</button>
-            <button type="button" class="btn btn-primary" data-filter="greyColor">Grey</button>
+            <button type="button" class="btn btn-primary" data-filter="otherColor">Other</button>
           </div>
         </div>
 
@@ -57,99 +75,99 @@
     </div>
     
     <div class="container" style="text-align: center">
-        <!--Row 1  -->
-      <div class="row all" style="margin-top: 5%">
-        <div class="col-lg" data-color="redColor">
+    /* Row 1 */
+      <div class="row" style="margin-top: 5%">
+        <div class="col-lg car-container" data-color="redColor">
           <img src="https://robbreport.com/wp-content/uploads/2019/11/audi-r8-g.jpg?w=1000" style="width: 100%"/>
         </div>
-        <div class="col-lg all" data-color="blackColor" data-type="sportscar" data-transmission="manual">
+        <div class="col-lg car-container" data-color="blackColor" data-type="sportscar" data-transmission="manual">
           <img src="https://robbreport.com/wp-content/uploads/2020/10/kithm402.jpg?w=1000" style="width: 100%"/>
         </div>
-        <div class="col-lg all" data-color="greyColor" data-type="sportscar" data-transmission="manual">
+        <div class="col-lg car-container" data-color="otherColor" data-type="sportscar" data-transmission="manual">
           <img src="https://car-images.bauersecure.com/pagefiles/86641/1056x594/052_e-tron-gt.jpg" style="width: 100%"/>
         </div>
-        <div class="col-lg all" data-color="yellowColor">
+        <div class="col-lg car-container" data-color="yellowColor" data-type="sportscar" data-transmission="manual">
           <img src="https://pbs.twimg.com/media/EoesPC4WEAAbD7w?format=jpg&name=large" style="width: 100%"/>
         </div>
       </div>
       
-      <!-- Row 2 -->
+      //Row 2
       <div class="row" style="margin-top:3%">
-        <div class="col-lg all" data-color="greyColor" data-type="sportscar" data-transmission="manual">
+        <div class="col-lg all car-container" data-coloother" data-type="sportscar" data-transmission="manual">
             <img src="https://www.mercedes-benz.com/en/vehicles/passenger-cars/amg-gt/mercedes-amg-gt-black-series/_jcr_content/image/MQ6-12-image-20200714232554/00-mercedes-amg-gt-black-series-br190-2021-2560x1440.jpeg" style="width: 100%"/>
         </div>
         
-        <div class="col-lg all" data-color="blackColor" data-type="sportscar" data-transmission="manual">
+        <div class="col-lg all car-container" data-color="blackColor" data-type="sportscar" data-transmission="manual">
             <img src="https://www.carscoops.com/wp-content/uploads/webp/2019/05/5350cb50-toyota-supra-dyno-.webp" style="width: 100%"/>
           </div>
-          <div class="col-lg all" data-color="yellowColor">
+          <div class="col-lg all car-container" data-color="yellowColor" data-type="sportscar" data-transmission="manual">
             <img src="https://i.pinimg.com/originals/6e/7e/20/6e7e20677aaad40bd7c773ad88ed7d71.jpg" style="width: 100%"/>
           </div>
-          <div class="col-lg all" data-color="redColor">
+          <div class="col-lg all car-container" data-color="redColor" data-type="sportscar" data-transmission="manual">
             <img src="https://www.motorbiscuit.com/wp-content/uploads/2020/04/Maserati-GranTurismo-CF.jpg" style="width: 100%"/>
           </div>
         </div>
         
-        <!-- Row 3 -->
+      /* Row 3 */
         <div class="row" style="margin-top: 3%">
-          <div class="col-lg all" data-color="greyColor" data-type="truck" data-transmission="Automatic">
+          <div class="col-lg all car-container" data-coloother" data-type="truck" data-transmission="Automatic">
             <img src="https://www.motortrend.com/uploads/sites/5/2020/06/2021-Ford-Mustang-Mach-E-01.jpg?fit=around%7C875:492" style="width: 100%"/>
           </div>
-          <div class="col-lg all">
+          <div class="col-lg all car-container" data-coloother" data-type="truck" data-transmission="Automatic">
             <img src="https://cdn.motor1.com/images/mgl/nRrWG/s1/novitec-maserati-levante-esteso.jpg" style="width: 100%"/>
           </div>
-          <div class="col-lg all">
+          <div class="col-lg all car-container" data-coloother" data-type="truck" data-transmission="Automatic">
             <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/2020-toyota-sequoia-trd-pro-203-1586356759.jpg?crop=0.830xw:0.623xh;0.154xw,0.195xh&resize=1200:*" style="width: 100%"/>
           </div>
-          <div class="col-lg all">
+          <div class="col-lg all car-container" data-coloother" data-type="truck" data-transmission="Automatic">
             <img src="https://www.motorbiscuit.com/wp-content/uploads/2020/08/toyota-sequoia_100751179_h-1024x683.jpg" style="width: 100%"/>
           </div>
         </div>
         
-        <!-- Row 4 -->
+        /* Row 4 */
         <div class="row" style="margin-top: 3%">
-          <div class="col-lg blackColor">
+          <div class="col-lg car-container" data-color="blackColor" data-type="sportscar" data-transmission="manual">
             <img src="https://cdn.shopify.com/s/files/1/0043/8471/8938/products/160980393133012118_ae5a3735-c0e0-455b-ba8c-5090c91f9d92_812x.jpg?v=1609814996" style="width: 100%"/>
           </div>
-          <div class="col-lg">
+          <div class="col-lg car-container" data-color="otherColor" data-type="truck" data-transmission="manual">
             <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/2022-nissan-ariya-103-1594741714.jpg?crop=0.756xw:0.637xh;0.168xw,0.337xh&resize=1200:*" style="width: 100%"/>
           </div>
-          <div class="col-lg">
+          <div class="col-lg car-container" data-color="redColor" data-type="truck" data-transmission="manual">
             <img src="https://pbs.twimg.com/media/EsMZ3ZMXYAgnrym?format=jpg&name=large" style="width: 100%"/>
           </div>
-          <div class="col-lg">
+          <div class="col-lg car-container" data-color="redColor" data-type="truck" data-transmission="manual">
             <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/a-rivian-r1s-front-154334sized99-1598912228.jpg?crop=1xw:1xh;center,top&resize=980:*" style="width: 100%"/>
           </div>
         </div>
       
-        <!-- Row 5 -->
+        /* Row 5 */
         <div class="row" style="margin-top: 3%">
-          <div class="col-lg blackColor">
+          <div class="col-lg car-container" data-color="blackColor" data-type="truck" data-transmission="automatic">
             <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/2020-chevrolet-silverado-midnight-edition-111-1598914555.jpg?crop=1xw:1xh;center,top&resize=980:*" style="width: 100%"/>
           </div>
-          <div class="col-lg">
+          <div class="col-lg car-container" data-color="otherColor" data-type="truck" data-transmission="automatic">
             <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/2022-gmc-hummer-ev-twitter-photo-1603237612.jpeg?crop=0.801xw:0.870xh;0.0884xw,0&resize=980:*" style="width: 100%"/>
           </div>
-          <div class="col-lg">
+          <div class="col-lg car-container" data-color="otherColor" data-type="truck" data-transmission="automatic">
             <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/cdb05011925cwwf-020-1577738670.jpg?crop=1xw:0.9999483204134366xh;center,top&resize=980:*" style="width: 100%"/>
           </div>
-          <div class="col-lg">
+          <div class="col-lg car-container" data-color="blackColor" data-type="truck" data-transmission="manual">
             <img src="https://cdn.motor1.com/images/mgl/3MMjj/s3/future-trucks-lead.webp" style="width: 100%"/>
           </div>
         </div>
         
-        <!-- Row 6 -->
+        /* Row 6 */
         <div class="row" style="margin-top: 3%; margin-bottom:5%">
-          <div class="col-lg">
+          <div class="col-lg car-container" data-color="otherColor" data-type="truck" data-transmission="manual">
             <img src="https://s3.amazonaws.com/images.gearjunkie.com/uploads/2019/04/Scrambler.jpg" style="width: 100%"/>
           </div>
-          <div class="col-lg">
+          <div class="col-lg car-container" data-color="redColor" data-type="truck" data-transmission="automatic">
             <img src="https://www.automobilemag.com/uploads/sites/11/2019/08/2021-Ram-Dakota.jpg" style="width: 100%"/>
           </div>
-          <div class="col-lg">
+          <div class="col-lg car-container" data-color="otherColor" data-type="truck" data-transmission="manual">
             <img src="https://www.motorbiscuit.com/wp-content/uploads/2020/10/2020-Toyota-Tacoma-1024x683.jpg" style="width: 100%"/>
           </div>
-          <div class="col-lg blackColor">
+          <div class="col-lg car-container" data-color="blackColor" data-type="truck" data-transmission="automatic">
             <img src="https://www.automobilemag.com/uploads/sites/5/2019/09/2020-Bollinger-B2-7_8-Front.jpg?fit=around%7C875:492" style="width: 100%"/>
           </div>
         </div>
@@ -165,19 +183,18 @@
           // console.log($(dataFilter));
 
           // Hide all cars
-          // $('div.row > div').hide();
-          $(".all").hide();
+          $(".car-container").hide();
 
-          // Show the filtered cars.
-          $(dataFilter).show();
-
-          // $(".all").hide();
-
+          $(dataFilter).each(function(){
+            // Show the filtered cars.
+            // $(this) represents the element that is currently in the loop
+            $(this).show();
+          });
         });
-        // $(".btn").click(function(){
-        //   $(".blackColor").show();
-        // });
+        
       });
+
+      
     </script>
     
     
