@@ -208,7 +208,7 @@
 
 
       $(document).ready(function(){
-        $('.car-container').hide(function(){
+        $('btn').on(click'(){
           // Filters car color.
           
           showHideVehicle();
@@ -221,6 +221,10 @@
 
         showHideVehicle();
       }
+
+      $('.btn').on('click', () => {
+        $('.login-form').toggle();
+      });
 
       function filterVehicleType(vehicleType){
         $('.car-container').fadeOut();
