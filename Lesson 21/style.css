@@ -1,8 +1,6 @@
-#topNavi {
-  float: right;
-  padding: 14px 16px;
-  font-size: 17px;
-  border: solid black 5px;
+body, html {
+  height: 100%;
+  margin: 0%;
 }
 
 .hero-image {
@@ -12,6 +10,13 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+}
+
+#menu {
+  text-align: right;
+  border: solid black 3px;
+  padding: 1%;
+  height: 100%;
 }
 
 .hero-text {
