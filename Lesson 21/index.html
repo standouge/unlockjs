@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
    
     <link rel="stylesheet" href="style.css">
     <!-- Version JQuery -->
@@ -18,10 +18,7 @@
 
     <style>
 
-      #midSection {
-        text-align: center;
-        padding-top: 20px;
-      }
+   
       
     </style>
 
@@ -29,12 +26,19 @@
 
   <body>
     <!-- Create Row for hero image -->
-    <div class="row hero-image">
+    <div class="container-fluid hero-image">
       
-      <div class="col-lg" id="menu">
-        <p>About</p>
-        <p>Contact</p>
+      <div class="row">
         
+        <div class="col-lg-10">
+
+        </div>
+
+        <div class="col-lg-2" id="menu">
+          <p>About</p>
+          <p>Contact</p>
+        </div>
+
       </div>
       
       <div class="hero-text">
@@ -42,40 +46,66 @@
         <p>#1 Wine Club In The World</p>
         <button>Join Us</button>
       </div>
-      
+    
     </div>
+    
 <!-- Opening Statement Section of Homepage -->
+
+  <div class="containter">
     <div class="row" id="textSection">
-      <div class="col-lg-4">
+      <div class="col">
 
       </div>
-      <div class="col-lg-4">
+      <div class="col">
         <h1>
           This Is My Opening Statement
         </h1>
         
       </div>
-      <div class="col-lg-4">
+      <div class="col">
         
       </div>
     </div>
+  </div>
+
+    
 
     <!-- Product Section of Homepage -->
-    <div class="row" id="productSection">
-      <div class="col-lg-4">
-
-      </div>
-      <div class="col-lg-4">
+    <div class="container">
+      
+      <div class="row productWrapper">
         
-      </div>
-      <div class="col-lg-4">
+        <div class="col">
+          <div class="card shadow">
+            <div class="mx-auto" width="200px">
+              <p>Best Product</p>
+            </div>
+          </div>
+        </div>
         
+        <div class="col">
+          <div class="card shadow">
+            <p>2nd Product</p>
+          </div>
+        </div>
+        
+        <div class="col">
+          <div class="card shadow">
+            <p>3rd Product</p>
+          </div>
+        </div>
+      
       </div>
+    
     </div>
 
     <!-- Footer Section of Homepage -->
-    <div class="row" id="footer">
+    <div class="container-fluid" style="">
+      
+      <div class="row" id="footerWrapper">
   
+      </div>
+
     </div>
 
  

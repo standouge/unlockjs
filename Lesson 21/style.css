@@ -14,7 +14,7 @@ body, html {
 
 #menu {
   text-align: right;
-  border: solid black 3px;
+  /* border: solid black 3px; */
   padding: 1%;
   height: 100%;
 }
@@ -42,4 +42,26 @@ body, html {
 .hero-text button:hover {
   background-color: #555;
   color: white;
+}
+
+#midSection {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.productWrapper {
+  border: solid black 3px;
+  margin-top: 3%;
+  height: 244px;
+
+}
+
+#footerWrapper {
+  margin-top: 3%;
+  margin-right: 0%;
+  border: solid black 3px;
+  height: 244px;
+  width: 100%;
+  background-color: #343634;
+
 }
