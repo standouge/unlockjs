@@ -55,11 +55,13 @@ body, html {
   height: 244px;
 
 }
-.footerWrapper {
+.footer {
   margin-top: 3%;
   height: 200px;
   background-color: #343634;
   color: white;
   text-align: center;
-
+  width: 100%;
+  left: 0;
+  bottom: 0;
 }
