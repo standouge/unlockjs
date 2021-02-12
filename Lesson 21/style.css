@@ -5,7 +5,7 @@ body, html {
 
 .hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/hero-image.jpg");
-  height: 50%;
+  height: 75%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -44,19 +44,18 @@ body, html {
   color: white;
 }
 
-#midSection {
+#textSection {
   text-align: center;
   padding-top: 20px;
 }
 
 .productWrapper {
-  border: solid black 3px;
   margin-top: 3%;
-  height: 244px;
+  height: 75%;
 
 }
 .footer {
-  margin-top: 3%;
+  margin-top:10%;
   height: 200px;
   background-color: #343634;
   color: white;
