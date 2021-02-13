@@ -12,7 +12,7 @@ body, html {
   position: relative;
 }
 
-#menu {
+.nav {
   text-align: right;
   /* border: solid black 3px; */
   padding: 1%;
@@ -64,4 +64,5 @@ body, html {
   width: 100%;
   left: 0;
   bottom: 0;
+  position: fixed;
 }
